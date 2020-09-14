@@ -1,1 +1,1 @@
-window.addEventListener('click', () => alert('good job'))
+window.addEventListener('click', () => alert('amazing'))
