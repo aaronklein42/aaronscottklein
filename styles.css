@@ -1,0 +1,35 @@
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #000000;
+}
+.header {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.header__title {
+    margin: 0;
+    font-family: sans-serif;
+    color: #50b4ee;
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.content {
+    background-image: url("beach_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
