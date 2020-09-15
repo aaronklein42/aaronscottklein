@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aaronklein42/aaronscottklein#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "jquery": "^3.5.1"
   }
 }
