@@ -34,7 +34,6 @@ const dir = express.static(__dirname)
 // will not work.
 app.use(dir)
 
-
 // This function just helps us simplify the usual syntax a bit.  You
 // may notice the TWO => symbols, which just means this is a function
 // that returns another function.  A useful shortcut when you want
@@ -44,9 +43,9 @@ app.use(dir)
 const getResponseCallback = filePath => (request, response) => response.sendFile(__dirname + filePath)
 
 // `app.get()` defines a route on our app (localhost:3000) which uses
-// the GET method of the http request.  The details aren't important
-// right now, just suffice to say that the first argument is the relative
-// URL mapping, and the second argument is the file which gets served.
+// the GET method for the http request.  The details aren't important
+// right now, just suffice to say that the first argument is the URL,
+// and the second argument is the file which gets served at that URL.
 app.get('/', getResponseCallback('/index.html'))
 app.get('/about', getResponseCallback('/about.html'))
 app.get('/projects', getResponseCallback('/projects.html'))
@@ -54,10 +53,10 @@ app.get('/resume', getResponseCallback('/resume.html'))
 // The above routes will let you use href="/about" instead of href="about.html"
 // in your <a> tags.
 
-// Now the we know everything about our app, we can actually run the
-// server by using `app.listen()`, where the first argument is the port
-// number we defined earlier, and the second argument is a callback that
-// runs (server-side) immediately after starting the app.  All we're doing
+// Now that we know everything about our app, we can run the server by
+// using `app.listen()`, where the first argument is the port number we
+// defined earlier, and the second argument is a callback that runs
+// (server-side) immediately after starting the app.  All we're doing
 // in this case is logging to the console, which, since this is running
 // server-side, will log to the terminal instead of the browser console.
 app.listen(port, () => console.log(`listening on port ${port}!`))
