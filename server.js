@@ -41,16 +41,16 @@ app.use(dir)
 // to generate a callback on the fly.  (reminder: a callback function
 // is just a function you pass into another function so it can be called
 // later on.)
-const sendFile = filePath => (req, res) => res.sendFile(__dirname + filePath)
+const getResponseCallback = filePath => (request, response) => response.sendFile(__dirname + filePath)
 
 // `app.get()` defines a route on our app (localhost:3000) which uses
 // the GET method of the http request.  The details aren't important
 // right now, just suffice to say that the first argument is the relative
 // URL mapping, and the second argument is the file which gets served.
-app.get('/', sendFile('/index.html'))
-app.get('/about', sendFile('/about.html'))
-app.get('/projects', sendFile('/projects.html'))
-app.get('/resume', sendFile('/resume.html'))
+app.get('/', getResponseCallback('/index.html'))
+app.get('/about', getResponseCallback('/about.html'))
+app.get('/projects', getResponseCallback('/projects.html'))
+app.get('/resume', getResponseCallback('/resume.html'))
 // The above routes will let you use href="/about" instead of href="about.html"
 // in your <a> tags.
 
