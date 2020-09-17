@@ -4,11 +4,13 @@ body {
     min-height: 100%;
     background-color: #000000;
 }
+
 .header {
     background-color: #000000;
     display: grid;
     grid-template-columns: 1fr auto;
 }
+
 .header__title {
     margin: 0;
     font-family: sans-serif;
@@ -28,7 +30,7 @@ body {
 }
 
 .content {
-    background-image: url("beach_background.png");
+    background-image: url("assets/beach_background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

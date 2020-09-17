@@ -27,7 +27,7 @@ const port = 3000
 // It defines a root directory, which tells the server where
 // to look for files by default.  `__dirname` is a variable that
 // represents the current directory of this file.
-const dir = express.static(__dirname)
+const dir = express.static(__dirname + '/src')
 
 // This actually uses the directory defined above.  Without this,
 // any relative URL references in your html, css, and javascript
