@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from 'components/header/header'
-import css from 'stlyes/page.module.css'
+import css from 'styles/page.module.css'
 
 export default function Home() {
   return (
