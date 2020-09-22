@@ -1,21 +1,16 @@
 import Head from 'next/head'
-import Header from 'components/header/header'
-import css from 'styles/page.module.css'
+import Content from 'components/content/content'
 
 export default function Home() {
   return (
-    <div className="page">
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <main className="content">
-        <p>main content</p>
-      </main>
-      <footer className="footer">
-        <p>footer content</p>
-      </footer>
-    </div>
+      <Content>
+        home page content
+      </Content>
+    </>
   )
 }

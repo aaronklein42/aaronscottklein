@@ -1,3 +1,9 @@
+import Content from 'components/content/content'
+
 export default function Resume() {
-  return <div>resume</div>
+  return (
+    <Content>
+      resume page content
+    </Content>
+  )
 }

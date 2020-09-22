@@ -1,10 +1,10 @@
-import Header from '../components/header/header'
+import Content from 'components/content/content'
 
 export default function About() {
   return (
-    <div>
-      <Header/>
-      <div>about</div>
-    </div>
+    <Content>
+      <h1>About</h1>
+      about page content
+    </Content>
   )
 }

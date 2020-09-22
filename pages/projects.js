@@ -1,3 +1,9 @@
+import Content from 'components/content/content'
+
 export default function Projects() {
-  return <div>projects</div>
+  return (
+    <Content>
+      projects page content
+    </Content>
+  )
 }
