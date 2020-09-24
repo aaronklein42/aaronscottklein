@@ -4,7 +4,9 @@ export default function Content({children}) {
 
   return (
     <main className={css.content}>
-      {children}
+      <div className={css.contentWrapper}>
+        {children}
+      </div>
     </main>
   )
 }

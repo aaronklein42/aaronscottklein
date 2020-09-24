@@ -1,6 +1,12 @@
 .content {
-  background-image: url("/beach_background.png");
+  background-image: url("/beach-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100%;
+}
+
+.contentWrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
