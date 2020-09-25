@@ -4,11 +4,13 @@ import css from 'styles/page.module.css'
 import 'styles/globals.css'
 
 export default function App({ Component, pageProps }) {
+
+  const isHome = true
+  const pageClass = isHome ? css.homePage : css.page
+
   return (
-    <div className={css.page}>
-      <Header/>
+    <div className={pageClass}>
       <Component {...pageProps} />
-      <Footer/>
     </div>
   )
 }
