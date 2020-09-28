@@ -1,5 +1,4 @@
-import Header from 'components/header/header'
-import Footer from 'components/footer/footer'
+import NavBar from 'components/nav/nav'
 import css from 'styles/page.module.css'
 import 'styles/globals.css'
 
@@ -11,6 +10,7 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={pageClass}>
       <Component {...pageProps} />
+      <NavBar />
     </div>
   )
 }
