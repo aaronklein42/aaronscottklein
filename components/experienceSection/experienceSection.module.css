@@ -1,0 +1,14 @@
+.title {
+    font-weight: 200;
+    margin: 0;
+}
+
+.responsibilities {
+    margin: 0;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.item:before {
+    content: '- ';
+}

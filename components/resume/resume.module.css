@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    background-color: rgba(156, 199, 254, 0.9);
+    border: 10px solid #d8e6ff;
+    padding: 10px;
+    max-width: 1200px;
+    color: #354e70;
+}
+
+.title {
+    margin: 0;
+    height: 100%;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.titleSpan {
+    font-weight: 200;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+.experienceList {
+    font-size: 15px;
+}
+
+.educationTitle {
+    font-weight: 200;
+}
+
+.schoolTitle {
+    font-weight: 700;
+}
+
+.educationTitle,
+.schoolTitle {
+    margin: 0;
+    font-size: 20px;
+}

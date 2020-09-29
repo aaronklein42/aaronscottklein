@@ -1,9 +1,10 @@
 import Content from 'components/content/content'
+import Resume from 'components/resume/resume'
 
-export default function Resume() {
+export default function ResumePage() {
   return (
     <Content>
-      resume page content
+      <Resume />
     </Content>
   )
 }
