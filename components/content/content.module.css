@@ -6,7 +6,19 @@
   height: 100%;
 }
 
-.contentWrapper {
-  background-color: rgba(0, 0, 0, 0.5);
+.content:before {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: '';
+  display: block;
+  width: 100%;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contentWrapper {
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
 }

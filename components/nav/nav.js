@@ -7,26 +7,18 @@ export default function Nav () {
     const collapsedArrowClass = open ? '' : css.collapsedArrow;
     const collapsedNavBarClass = open ? '' : css.collapsedNavBar;
     const handleClick = () => {
-        setOpen(!open);    
+        setOpen(!open);
     }
-    if (open){
-        return (
-            <nav>
-                <div className={`${css.navBar} ${collapsedNavBarClass}`}>
-                    <a className={css.navLink} href='/about'>About Me</a>
-                    <a className={css.navLink} href='/resume'>Resume</a>
-                    <a className={css.navLink} href='/projects'>Projects</a>
-                </div>
-                 <button className={`${css.navButton} ${collapsedArrowClass}`} onClick={handleClick}>
-                    <FaArrowAltCircleDown className={css.navArrow} />
-                </button>
-            </nav>
-        )}
-    else {
-       return (
-            <button className={`${css.navButton} ${collapsedArrowClass}`} onClick={handleClick}>
+    return (
+        <nav>
+            <div className={`${css.navBar} ${collapsedNavBarClass}`}>
+                <a className={css.navLink} href='/about'>About Me</a>
+                <a className={css.navLink} href='/resume'>Resume</a>
+                <a className={css.navLink} href='/projects'>Projects</a>
+            </div>
+                <button className={`${css.navButton} ${collapsedArrowClass}`} onClick={handleClick}>
                 <FaArrowAltCircleDown className={css.navArrow} />
             </button>
-        )
-        }
+        </nav>
+    )
 }

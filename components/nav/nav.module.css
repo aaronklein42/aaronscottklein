@@ -53,8 +53,11 @@
 }
 
 @media (min-width: 366px) {
-    .navLink {
-        width: 30%;
+    .navLink,
+    .navLink:active,
+    .navLink:hover,
+    .navLink:visited {
+      width: 30%;
     }
     .navBar {
       font-size: 28px;
