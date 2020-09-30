@@ -7,7 +7,7 @@
 }
 
 .content:before {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   content: '';
   display: block;
   width: 100%;
