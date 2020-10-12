@@ -1,6 +1,6 @@
 .navButton {
     position: absolute;
-    bottom: 10vh;
+    bottom: calc(10vh - 60px);
     left: 0;
     right: 0;
     margin: 0 auto 0 auto; /*Centers the icon*/
@@ -9,7 +9,7 @@
     background-color: transparent;
     border: none;
     width: 60px;
-    font-size:60px;
+    font-size: 60px;
 }
 
 .navBar {
@@ -52,7 +52,16 @@
     transition: transform .5s;
 }
 
-@media (min-width: 366px) {
+.navButton:focus {
+  outline: none;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 400px) {
     .navLink,
     .navLink:active,
     .navLink:hover,

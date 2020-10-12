@@ -1,11 +1,13 @@
 {
   "name": "learn-starter",
+  "homepage": "https://aaronscottklein.com/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "next start -p 80"
   },
   "dependencies": {
     "next": "9.5.3",
