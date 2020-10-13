@@ -61,7 +61,7 @@
   display: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 420px) {
     .navLink,
     .navLink:active,
     .navLink:hover,
