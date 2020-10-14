@@ -1,6 +1,7 @@
 import Content from 'components/content/content'
 import PageContent from 'components/pageContent/pageContent'
-import TicTacToe from 'projects/TicTacToe/index'
+import Link from 'next/link'
+import ProjectThumbnail from 'components/projectThumbnail/projectThumbnail'
 
 const projects = [
 	{
@@ -28,7 +29,9 @@ export default function Projects() {
   return (
     <Content>
       <PageContent title='Projects'>
-        <TicTacToe/>
+        <Link href="/projects/tic-tac-toe">
+          <a><ProjectThumbnail imgUrl="/tic-tac-toe.jpg" /></a>
+        </Link>
       </PageContent>
     </Content>
   )  
