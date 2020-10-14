@@ -1,5 +1,6 @@
 import Content from 'components/content/content'
 import PageContent from 'components/pageContent/pageContent'
+import TicTacToe from 'projects/TicTacToe/index'
 
 const projects = [
 	{
@@ -27,7 +28,7 @@ export default function Projects() {
   return (
     <Content>
       <PageContent title='Projects'>
-        Projects will go here!
+        <TicTacToe/>
       </PageContent>
     </Content>
   )  
